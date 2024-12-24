@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/userPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/userphoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"/>
+
+    <EditText
+        android:id="@+id/nameEdtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPhoto"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Name"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="18dp"
+        />
+
+    <EditText
+        android:id="@+id/palindromeEdtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdtTxt"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint="Palindrome"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="18dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palindromeEdtTxt"
+        android:id="@+id/checkBtn"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="CHECK"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@null"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBtn"
+        android:id="@+id/nextBtn"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="NEXT"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@null"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
